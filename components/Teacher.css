@@ -1,0 +1,44 @@
+.formContainer {
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  position: relative; /* Add this line to enable positioning */
+}
+
+.Teacher {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.5); /* Add opacity to the background */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Ensure the modal appears on top of other content */
+}
+
+.modalOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Add an overlay to darken the background */
+  z-index: 50; /* Ensure the overlay appears below the modal */
+}
+
+.modalContent {
+  z-index: 150; /* Ensure the modal content appears on top of the overlay */
+}
+.Buttons {
+  margin-top: 20px;
+} 
+
+.Buttons button {
+  margin-right: 10px;
+}
